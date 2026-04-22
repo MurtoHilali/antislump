@@ -2024,8 +2024,21 @@ export default function App() {
           </div>
         )}
 
-        <div style={{ textAlign: "center", marginTop: 48, color: dark ? "rgba(255,255,255,0.1)" : "rgba(10,15,25,0.18)", fontSize: 11, letterSpacing: "3px" }}>
-          PICK ONE · START NOW · THE REST FOLLOWS
+        <div style={{ textAlign: "center", marginTop: 48, fontSize: 12 }}>
+          <a
+            href="https://murto.co"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: dark ? "rgba(255,255,255,0.22)" : "rgba(10,15,25,0.3)",
+              textDecoration: "none",
+              transition: "color 0.15s",
+            }}
+            onMouseEnter={e => e.target.style.color = dark ? "rgba(255,255,255,0.55)" : "rgba(10,15,25,0.6)"}
+            onMouseLeave={e => e.target.style.color = dark ? "rgba(255,255,255,0.22)" : "rgba(10,15,25,0.3)"}
+          >
+            A mini-project by Murto Hilali
+          </a>
         </div>
       </div>
 
